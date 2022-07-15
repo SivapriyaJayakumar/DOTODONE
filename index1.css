@@ -1,0 +1,308 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.maindiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.maindiv2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    position: relative;
+}
+.title2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 30px;
+    color:rgba(5, 150, 105, 1);
+}
+
+
+.Enter{
+    box-shadow: 0px 0px 4px #999 ;
+    display: flex;
+    flex-direction: row;
+}
+.entertask{
+    background-color: rgba(31, 41, 55,1);
+    border: none;
+    color:white;
+    padding:22px 32px 22px 32px;
+    font-size: 22px;
+   
+}
+.storetask{
+    padding: 12px;
+    border: none;
+    min-height: 100px;
+    min-width: 300px;
+  
+}
+.add{
+    width:30px;
+    height: 30px;
+    justify-content: center;
+    align-self: center;
+   cursor: pointer;
+}
+.addicon{
+    padding: 12px;
+    background-color: rgba(110, 231, 183, 1);
+}
+.outertagdiv{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+padding-left: 6px;
+padding-right: 6px;
+margin:0px 10px 8px 0px;
+}
+.outermain{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 6px;
+    padding-right: 6px;
+    box-shadow: 0 0 2px #999;
+    border-radius: 3px;
+    margin-bottom: 16px;
+
+    }
+.edit{
+    padding: 8px 8px 8px 8px;
+    margin-right: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgba(31, 41, 55,1);
+    background-color: rgba(110, 231, 183, 1);
+    color: black;
+    cursor: pointer;
+}
+.taginfo{
+    padding: 8px 8px 8px 8px;
+    margin-bottom: 8px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgba(31, 41, 55,1);
+    background-color: rgba(110, 231, 183, 1);
+    color: black;
+}
+@keyframes animate{
+    from{margin-top: 800px;}
+}
+
+.closemodal{
+display: none;
+}
+.modal{
+    max-width: 300px;
+    min-height: 100px;
+    border-radius: 30px;
+    padding: 20px;
+    justify-content:center; 
+    align-items:center;
+    background-color:rgba(31, 41, 55,1);
+    color: white;
+    position: fixed;
+    top:80px;
+    right:0px;
+    animation: animate 1000ms ;
+}
+.tagname{
+    padding: 10px;
+    font-size: 16px;
+}
+.labeltag{
+    font-size: 22px;
+}
+input:focus{
+    outline: none;
+}
+
+.outerdiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-bottom: 8px;
+    position: relative;
+    align-items: center;
+    max-height: 60px;
+    cursor: pointer;
+}
+.paradiv{
+    font-size: 22px;
+    padding: 0 0 0 8px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.remove{
+    right:10px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+.congrats{
+    font-size: 20px;
+    color: rgba(31, 41, 55,1);
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+.tick{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    padding-left: 8px;
+}
+.listofdone{
+    padding:8px;
+    border: none;
+    min-height: 100px;
+    min-width: 300px;
+}
+.titleofcompleted{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(31, 41, 55,1);
+    border: none;
+    color:white;
+    padding: 12px;
+    font-size: 22px;
+}
+.completeditems{
+    margin:40px;
+    box-shadow: 0 0 4px #999;
+}
+.completedline{
+    padding-top: 2px;
+    padding-left: 10px;
+}
+.done{
+    width: 30px;
+    height: 30px;
+}
+.ptask{
+    padding:0 0 0 40px;
+    margin: 0px;
+}
+.createddate{
+   padding-left: 20px;
+   padding-right: 20px;
+   justify-content: center;
+   align-items: center;
+   font-size: 16px;
+
+}
+
+@media only screen and (max-width: 800px) {
+    .maindiv{
+        display: flex;
+        flex-direction: column;
+        min-width:400px;
+        min-height:200px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .maindiv{
+        display: flex;
+        flex-direction: column;
+        min-width:400px;
+        min-height:200px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .maindiv{
+        display: flex;
+        flex-direction: column;
+        min-width:300px;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+    .title2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        padding: 30px;
+        color:rgba(5, 150, 105, 1);
+    }
+    .entertask{
+        background-color: rgba(31, 41, 55,1);
+        border: none;
+        color:white;
+        padding: 8px;
+        font-size: 16px;
+    }
+    .storetask{
+        padding:12px;
+        border: none;
+        min-height: 100px;
+    }
+    .listofdone{
+        padding:8px;
+        border: none;
+        min-height: 100px;
+        min-width:250px;
+    }
+
+}
+@media only screen and (max-width: 380px) {
+    .maindiv{
+        display: flex;
+        flex-direction: column;
+        min-width:200px;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+    .title2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        padding: 20px;
+        color:rgba(5, 150, 105, 1);
+    }
+    .entertask{
+        background-color: rgba(31, 41, 55,1);
+        border: none;
+        color:white;
+        padding: 12px;
+        font-size: 16px;
+    }
+    .storetask{
+        padding:16px;
+        border: none;
+        min-height: 100px;
+    }
+    .listofdone{
+        padding:22px;
+        border: none;
+        min-height: 100px;
+        min-width:200px;
+    }
+
+}
